@@ -10,7 +10,7 @@ impl LinkedList{
         match self{
             LinkedList::Nil => println!("nil"),
             LinkedList::Node(value, tail) => {
-                println!("node {}", value);
+                println!("\tnode {}", value);
                 tail.display_list();
             }
         }
@@ -60,5 +60,5 @@ fn main() {
     println!("Realizando o delete...");
      list.delete(0);
     println!("delete concluído!");
-    //list.display_list();
+    list.display_list();
 }
