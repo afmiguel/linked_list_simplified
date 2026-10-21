@@ -4,13 +4,6 @@ enum LinkedList{
     Node(i32, Box<LinkedList>),
 }
 
-impl Drop for LinkedList{
-    fn drop(&mut self){
-        let ptr = std::ptr::addr_of!(*self);
-        println!("\tEncerrando o nó {:?} em {:p}", self, ptr);
-    }
-}
-
 impl LinkedList{
     fn display_list(&self) {
         match self{
