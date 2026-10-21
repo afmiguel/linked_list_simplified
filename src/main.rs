@@ -50,15 +50,15 @@ impl LinkedList{
 
 fn main() {
     let mut list = LinkedList::Nil;
-    list.push_back(1);
-    list.push_back(2);
+    list.push_back(10);
+    list.push_back(20);
     //list.display_list();
     println!("Realizando o push_front...");
-    list.push_front(3);
+    list.push_front(30);
     println!("push_front concluído!");
-    //list.display_list();
+    list.display_list();
     println!("Realizando o delete...");
-     list.delete(1);
+     list.delete(0);
     println!("delete concluído!");
     //list.display_list();
 }
