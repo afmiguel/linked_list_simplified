@@ -5,6 +5,7 @@ enum LinkedList{
 }
 
 impl LinkedList{
+    #[allow(dead_code)]
     fn display_list(&self) {
         match self{
             LinkedList::Nil => println!("nil"),
