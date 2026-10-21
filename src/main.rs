@@ -52,9 +52,11 @@ fn main() {
     let mut list = LinkedList::Nil;
     list.push_back(1);
     list.push_back(2);
+    //list.display_list();
     println!("Realizando o push_front...");
     list.push_front(3);
     println!("push_front concluído!");
+    //list.display_list();
     println!("Realizando o delete...");
      list.delete(1);
     println!("delete concluído!");
