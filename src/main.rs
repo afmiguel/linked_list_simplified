@@ -32,9 +32,9 @@ impl LinkedList{
             match self{
                 LinkedList::Nil => None,
                 LinkedList::Node(value, tail) => {
-                    let temp = value.clone();
+                    let v_clone = value.clone();
                     *self = *tail.clone();
-                    Some(temp)
+                    Some(v_clone)
                 }
             }
         } else {
